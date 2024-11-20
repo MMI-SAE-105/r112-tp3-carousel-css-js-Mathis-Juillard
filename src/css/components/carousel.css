@@ -33,9 +33,15 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   justify-content: center;/* Centre le contenu du bouton horizontalement - https://developer.mozilla.org/fr/docs/Web/CSS/justify-content */
   border: solid 1px;/* Bordure solide de 1px - https://developer.mozilla.org/fr/docs/Web/CSS/border */
   border-radius: 50px;/* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
+  position: absolute;
+  top: 260px;
+  right: 0; 
+  
 }
 .carousel__button--prev {
   transform: rotate(180deg); /* Fait pivoter le bouton de 180 degrés - https://developer.mozilla.org/fr/docs/Web/CSS/transform */
+  top: 260px;
+  left: 0px;
 }
 
 .carousel__container {
@@ -48,7 +54,7 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .carousel__item {
- flex: 1 0 100%; /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
+ flex: 1 0 80%; /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
  scroll-snap-align: center; /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
 }
 
